@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/book.css">
+</head>
+
+<body>
+    <div id="bar" class="chart"></div>
+    <div id="pie" class="chart"></div>
+
+    <script src="js/lib/echarts.min.js"></script>
+
+    <script src="js/book_data.js"></script>
+    <script src="js/book_chart.js"></script>
+    <script>
+        let data = bookJSON()
+        barChart(data)
+        pieChart(data)
+    </script>
+</body>
+
+</html>
